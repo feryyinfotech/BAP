@@ -1,15 +1,18 @@
 export const rupees = "₹";
 
-export const baseUrl = "https://admin.righttime.fun";
+// export const baseUrl = "https://admin.righttime.fun";
+export const baseUrl = "https://admin.bigandplay.com";
 
 // export const fron_end_main_domain = "https://sunlottery.fun";
-export const fron_end_main_domain = "https://righttime.fun";
+export const fron_end_main_domain = "https://bigandplay.com";
 
 export const domain = "https://sun-lottery-timer-tlhr.onrender.com/";
 
 
-export const support_mail = `support@sunlottrey.fun`;
-export const telegram_url = `https://t.me/SunLottaryOfficial`;
+export const support_mail = ""
+// `support@sunlottrey.fun`;
+export const telegram_url = ""
+// `https://t.me/SunLottaryOfficial`;
 
 export const endpoint = {
   login: `${baseUrl}/api/user_login`,

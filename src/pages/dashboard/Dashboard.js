@@ -304,12 +304,12 @@ function Dashboard() {
                 <Box component="img" src={logo} sx={{ width: "30px" }}></Box>
                 <span className="text-[14px]"> Big And Play </span>
               </div>
-              <div className="flex gap-1 items-center cursor-pointer">
+              {/* <div className="flex gap-1 items-center cursor-pointer">
                 <CloudDownloadIcon sx={{ color: zubgtext }} />
                 <span className="text-[12px]" style={{ color: zubgtext }}>
                   Download App
                 </span>
-              </div>
+              </div> */}
             </div>
           </div>
           <Box className="!px-2">
@@ -613,19 +613,12 @@ function Dashboard() {
             </div>
           ) : (
             <Box sx={styles.wininfoouter}>
-              <Typography
-                variant="body1"
-                color="initial"
-                sx={{
-                  color: zubgtext,
-                  fontWeight: "600",
-                  fontSize: "16px",
-                  mb: 2,
-                }}
+              <span
+               className="!text-white"
               >
                 Winning information
-              </Typography>
-              {winnner_data.slice(3, 10)?.map((i, index) => {
+              </span>
+              {winnner_data?.slice(3, 10)?.map((i, index) => {
                 return (
                   <Stack
                     key={index}
@@ -702,7 +695,7 @@ function Dashboard() {
             </div>
           ) : (
             <Box sx={{ ...styles.wininfoouter, mb: "40px" }}>
-              {winnner_data.slice(0, 3)?.map((i, index) => {
+              {winnner_data?.slice(0, 3)?.map((i, index) => {
                 return (
                   <Stack
                     key={index}
@@ -746,7 +739,7 @@ function Dashboard() {
                         <Typography variant="body1" color="initial">
                           Receive ₹{Number(i?.win || 0)?.toFixed(2)}
                         </Typography>
-                        <Typography variant="body1" color="initial">
+                        <Typography variant="body1" color="initial" className="!m-0">
                           Winning amount
                         </Typography>
                       </Box>
@@ -1001,13 +994,14 @@ const styles = {
     width: "95%",
     marginLeft: "2.5%",
     // background: zubgwhite,
-    padding: "10px 5px",
+    padding: "20px 5px",
     mt: "20px",
     borderRadius: "10px",
     boxShadow: zubgshadow,
     backgroundImage: `url(${gmbg})`,
-    backgroundSize: "100% 100%",
+    // backgroundSize: "100% 100%",
     position: "relative",
+    textAlign:'center'
   },
   wininfooutertwo: {
     alignItems: "center",
