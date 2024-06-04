@@ -506,8 +506,8 @@ function WalletRecharge() {
               {deposit_amount
                 ? Number(amount?.cricket_wallet || 0)?.toFixed(2)
                 : Number(
-                    Number(amount?.wallet || 0) + Number(amount?.winning || 0)
-                  )?.toFixed(2)}
+                  Number(amount?.wallet || 0) + Number(amount?.winning || 0)
+                )?.toFixed(2)}
             </Typography>
             <CachedIcon
               sx={{
@@ -901,7 +901,7 @@ const style = {
     color: "white !important",
     width: "31%",
     border: "1px solid white",
-    padding: "10px",
+    padding: "10px 0px",
     "&:hover": { background: zubgbackgrad, border: "1px solid transparent" },
   },
   paytmbtntwo: {
@@ -913,6 +913,7 @@ const style = {
     width: "100%",
     mt: "20px",
     border: "1px solid white",
+
     padding: "10px",
     "&:hover": { background: zubgbackgrad, border: "1px solid transparent" },
   },

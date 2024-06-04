@@ -614,7 +614,7 @@ function Dashboard() {
           ) : (
             <Box sx={styles.wininfoouter}>
               <span
-               className="!text-white"
+                className="!text-white"
               >
                 Winning information
               </span>
@@ -678,7 +678,7 @@ function Dashboard() {
               marginLeft: "2.5%",
               borderRadius: "10px",
               mt: "20px",
-              mb: "20px",
+              mb: "50px",
               height: "25vh",
               backgroundImage: `url(${stage})`,
               backgroundSize: "100% 100%",
@@ -687,68 +687,7 @@ function Dashboard() {
           >
 
           </Box>
-          {/* stage Podium end */}
-          {loding ? (
-            <div className="w-[100%] flex justify-center">
-              {" "}
-              <CircularProgress className="!text-#E71D1E" />
-            </div>
-          ) : (
-            <Box sx={{ ...styles.wininfoouter, mb: "40px" }}>
-              {winnner_data?.slice(0, 3)?.map((i, index) => {
-                return (
-                  <Stack
-                    key={index}
-                    direction="row"
-                    sx={{ ...styles.wininfoinner, mb: "10px" }}
-                  >
-                    <Stack direction="row" sx={styles.wininfoouterone}>
-                      <Avatar
-                        width={50}
-                        src={
-                          Math.floor(Math.random() * 5) + 1 === 1
-                            ? "https://mui.com/static/images/avatar/4.jpg"
-                            : Math.floor(Math.random() * 5) + 1 === 2
-                              ? "https://lh3.googleusercontent.com/a/ACg8ocJ_lQQ7XjcLthKctAe1u5A6Fv8JJUQ0ugECmc7RkiZmKfI=s360-c-no"
-                              : Math.floor(Math.random() * 5) + 1 === 3
-                                ? "https://sunlottery.fun/static/media/tanveer.03fd8989206194114777.PNG"
-                                : Math.floor(Math.random() * 5) + 1 === 4
-                                  ? "https://sunlottery.fun/static/media/sajid.e6abfd6b30c0fa7d3b1a.PNG"
-                                  : Math.floor(Math.random() * 5) + 1 === 5
-                                    ? "https://res.cloudinary.com/do7kimovl/image/upload/v1711806164/WhatsApp_Image_2024-03-30_at_6.53.33_PM_qo99n4.jpg"
-                                    : ""
-                        } // Close the src attribute here
-                        className={`capitalize ${i.id % 2 === 0 ? "!bg-[#2350BF]" : "!bg-green-700"
-                          }`}
-                      >
-                        {i?.email?.split("@")[0]?.substring(0, 1)}
-                      </Avatar>
-                      <Typography variant="body1">
-                        {i?.email
-                          ? i.email.split("@")[0].substring(0, 2) +
-                          "**" +
-                          (i.email.split("@")[0].length > 2
-                            ? i.email.split("@")[0].substring(2, 4)
-                            : "")
-                          : "**"}
-                      </Typography>
-                    </Stack>
-                    <Stack direction="row" sx={styles.wininfooutertwo}>
-                      <Box component="img" src={winp4} />
-                      <Box>
-                        <Typography variant="body1" color="initial">
-                          Receive ₹{Number(i?.win || 0)?.toFixed(2)}
-                        </Typography>
-                        <Typography variant="body1" color="initial" className="!m-0">
-                          Winning amount
-                        </Typography>
-                      </Box>
-                    </Stack>
-                  </Stack>
-                );
-              })}
-            </Box>
-          )}
+
 
           {poicy && !lodingBanner && (
             <Dialog
@@ -1001,7 +940,7 @@ const styles = {
     backgroundImage: `url(${gmbg})`,
     // backgroundSize: "100% 100%",
     position: "relative",
-    textAlign:'center'
+    textAlign: 'center'
   },
   wininfooutertwo: {
     alignItems: "center",

@@ -387,19 +387,20 @@ function Register() {
 
                 <Button
                   component={NavLink}
+                  className="btnLogin"
+                  onClick={fk.handleSubmit}
+                >
+                  Register
+                </Button>
+
+                <Button
+                  component={NavLink}
                   to="/"
                   className="btnregister"
                   mt={2}
                   sx={{ color: zubgtext }}
                 >
                   Log in
-                </Button>
-                <Button
-                  component={NavLink}
-                  className="btnLogin"
-                  onClick={fk.handleSubmit}
-                >
-                  Register
                 </Button>
               </Stack>
             </Box>
