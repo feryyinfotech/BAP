@@ -6,7 +6,7 @@ export const baseUrl = "https://admin.bigandplay.com";
 // export const fron_end_main_domain = "https://sunlottery.fun";
 export const fron_end_main_domain = "https://bigandplay.com";
 
-export const domain = "https://sun-lottery-timer-tlhr.onrender.com/";
+export const domain = "https://big-and-play-timer.onrender.com/";
 
 
 export const support_mail = ""
