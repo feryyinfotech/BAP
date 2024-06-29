@@ -175,70 +175,7 @@ function Account() {
             </Typography>
           </Box>
         </Box>
-        <Box sx={style.actionContainer} component={NavLink} to={"/bathistory"}>
-          <Box
-            sx={{
-              width: "50%",
-              height: "100%",
-            }}
-          >
-            <Stack direction="row" sx={{ alignItems: "center" }}>
-              <Box
-                component="img"
-                src={casino}
-                sx={{ width: "40px", height: "40px", marginRight: "20px" }}
-              ></Box>
-              <Box
-                sx={{
-                  "&>:nth-child(1)": {
-                    fontSize: "15px",
-                    fontWeight: "500",
-                    color: zubgtext,
-                  },
-                  "&>:nth-child(2)": {
-                    fontSize: "12px",
-                    fontWeight: "500",
-                    color: zubgtext,
-                  },
-                }}
-              >
-                <p className="!text-sm">Bet</p>
-                <p className="!text-[10px]">My betting history</p>
-              </Box>
-            </Stack>
-          </Box>
-          <Box
-            sx={{
-              width: "50%",
-              height: "100%",
-            }}
-          >
-            <Stack direction="row" sx={{ alignItems: "center" }}>
-              <Box
-                component="img"
-                src={card}
-                sx={{ width: "40px", height: "40px", marginRight: "20px" }}
-              ></Box>
-              <Box
-                sx={{
-                  "&>:nth-child(1)": {
-                    fontSize: "15px",
-                    fontWeight: "500",
-                    color: zubgtext,
-                  },
-                  "&>:nth-child(2)": {
-                    fontSize: "10px",
-                    fontWeight: "500",
-                    color: zubgtext,
-                  },
-                }}
-              >
-                <p className="!text-sm">Transaction</p>
-                <p className="!text-[10px]">My Transaction history</p>
-              </Box>
-            </Stack>
-          </Box>
-        </Box>
+        
         <Box sx={style.actionContainertwo}>
           <Stack
             sx={{
